@@ -1,0 +1,53 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", "sans-serif";
+}
+ul {
+  margin: o;
+  padding: 0;
+  list-style: none;
+  white-space: nowrap;
+}
+
+ul li {
+  background-color: #5f6975;
+}
+
+.menu > li {
+  background-color: #636b75;
+  display: inline-block;
+  margin-left: -5px;
+}
+
+.menu li:hover {
+  background-color: #2f95c8;
+}
+
+.menu a {
+  padding: 12px 12px 12px 12px;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  color: white;
+}
+
+.submenu,
+.supersubmenu {
+  position: absolute;
+  display: none;
+}
+
+.submenu list {
+  position: relative;
+}
+
+nav .menu > li:hover .submenu {
+  display: block;
+}
+
+nav .submenu > li:hover .supersubmenu {
+  display: block;
+  transform: translate(60%, -25%);
+}
